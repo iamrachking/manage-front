@@ -1,5 +1,18 @@
 <script setup>
 
+import { onMounted } from 'vue'
+
+onMounted(() => {
+  const offcanvasEl = document.getElementById('offcanvasDarkNavbar')
+  const bsOffcanvas = bootstrap.Offcanvas.getOrCreateInstance(offcanvasEl)
+
+  document.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', () => {
+      bsOffcanvas.hide()
+    })
+  })
+})
+
 
 </script>
 <template>
