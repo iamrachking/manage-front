@@ -1,7 +1,6 @@
 <script setup>
-
+ //ceci est pour fermer le offcanvas au clique dun de ses link 
 import { onMounted } from 'vue'
-
 onMounted(() => {
   const offcanvasEl = document.getElementById('offcanvasDarkNavbar')
   const bsOffcanvas = bootstrap.Offcanvas.getOrCreateInstance(offcanvasEl)
